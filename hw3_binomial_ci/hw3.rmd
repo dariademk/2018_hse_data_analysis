@@ -1,0 +1,119 @@
+---
+title: "hw3"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### 1.1
+```{r}
+
+bin <- read.csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/dariademk/hw3_binomial_ci/hw3_wodehouse.csv")
+
+
+bin %>% 
+  filter(word == "сэр") %>% 
+  count(chapter) ->
+  n_chap
+
+bin %>% 
+  filter(word == "сэр") %>% 
+  count(word) ->
+  n_sum
+  
+n_chap %>% 
+  mutate(average = 326/n) %>% 
+  arrange(desc(average))  ->
+  bin_sir
+
+bin_sir %>% 
+  summarise(g_mean = mean(average)) ->
+  grand_mean
+grand_mean
+```
+# 1.2
+
+```{r}
+btstrp <- bootstrap(bin_sir$average, nboot = 10000, theta = mean)$thetastar
+as.tibble(btstrp)
+```
+# 1.3
+```{r}
+bin_sir %>% 
+  mutate(n_words = 326) %>% 
+  arrange(desc(n_words))  ->
+  bin_sir
+bin_sir %>% 
+  slice(1:30) %>% 
+  group_by(chapter) %>% 
+  mutate(low_ci = binom.test(x = n, n = n_words, ci.method = "Clopper-Pearson")$conf.int[1],
+         up_ci = binom.test(x = n, n = n_words, ci.method = "Clopper-Pearson")$conf.int[2]) %>%
+```
+# 1.4
+```{r}
+mu <- mean(bin_sir$average)
+var <- var(bin_sir$average)
+alpha0 <- ((1 - mu) / var - 1 / mu) * mu ^ 2
+beta0 <- alpha0 * (1 / mu - 1)
+alpha0
+
+bin_sir %>% 
+  slice(1:30) %>%
+  mutate(alpha_post = n+alpha0,
+         beta_post = n_words-n+beta0,
+         average_post = alpha_post/(alpha_post+beta_post),
+         cred_int_l = qbeta(.025, alpha_post, beta_post),
+         cred_int_h = qbeta(.975, alpha_post, beta_post)) ->
+  posterior
+
+posterior %>% 
+  select(chapter, n_words, average, average_post) %>% 
+  arrange(n)
+as.tibble(mutate(up_ci = binom.test(x = n, n = 326, ci.method = "Clopper-Pearson")$conf.int[2]))
+```
+# 1.5
+```{r}
+bin_sir %>% 
+  slice(1:30) %>% 
+  group_by(chapter) %>% 
+  
+as.tibble(mutate(low_ci = binom.test(x = n, n = n_words, ci.method = "Clopper-Pearson")$conf.int[1]))
+```
+# 1.6
+```{r}
+bin_sir %>% 
+  slice(1:30) %>%
+  mutate(alpha_post = n+alpha0,
+         beta_post = n_words-n+beta0,
+         average_post = alpha_post/(alpha_post+beta_post),
+         cred_int_l = qbeta(.025, alpha_post, beta_post),
+         cred_int_h = qbeta(.975, alpha_post, beta_post)) ->
+  posterior
+
+posterior %>% 
+  select(chapter, n_words, average, average_post) %>% 
+  arrange(n)
+as.tibble(mutate(low_ci = binom.test(x = n, n = 326, ci.method = "Clopper-Pearson")$conf.int[1]))
+```
