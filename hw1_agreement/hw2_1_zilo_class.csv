@@ -75,7 +75,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 1,f,15,88,rʲukzak,rucksack,рюкзак,loan,b
 1,f,15,89,"ʔʷen, ʁʷen",horn,рог,native,b
 1,f,15,90,dunɡil,hole,яма,native,b
-1,f,15,91,ʃĩwũ,milk,молоко,native,r
+1,f,15,91,ʃĩwũ,milk,молоко,native,r
 1,f,15,93,ritɬ'i,meat,мясо,native,b
 1,f,15,95,ʁan,flat cake,лепешка,native,b
 1,f,15,96,bank,bank,банк,loan,b
@@ -164,7 +164,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 2,f,53,88,rʲukzak,rucksack,рюкзак,loan,b
 2,f,53,89,"ʔʷen, ʁʷen",horn,рог,native,b
 2,f,53,90,dunɡil,hole,яма,native,b
-2,f,53,91,ʃĩwũ,milk,молоко,native,r
+2,f,53,91,ʃĩwũ,milk,молоко,native,r
 2,f,53,93,ritɬ'i,meat,мясо,native,b
 2,f,53,95,ʁan,flat cake,лепешка,native,b
 2,f,53,96,bank,bank,банк,loan,b
@@ -253,7 +253,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 3,f,39,88,rʲukzak,rucksack,рюкзак,loan,b
 3,f,39,89,"ʔʷen, ʁʷen",horn,рог,native,b
 3,f,39,90,dunɡil,hole,яма,native,b
-3,f,39,91,ʃĩwũ,milk,молоко,native,r
+3,f,39,91,ʃĩwũ,milk,молоко,native,r
 3,f,39,93,ritɬ'i,meat,мясо,native,b
 3,f,39,95,ʁan,flat cake,лепешка,native,b
 3,f,39,96,bank,bank,банк,loan,b
@@ -342,7 +342,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 4,m,59,88,rʲukzak,rucksack,рюкзак,loan,b
 4,m,59,89,"ʔʷen, ʁʷen",horn,рог,native,b
 4,m,59,90,dunɡil,hole,яма,native,b
-4,m,59,91,ʃĩwũ,milk,молоко,native,r
+4,m,59,91,ʃĩwũ,milk,молоко,native,r
 4,m,59,93,ritɬ'i,meat,мясо,native,b
 4,m,59,95,ʁan,flat cake,лепешка,native,b
 4,m,59,96,bank,bank,банк,loan,b
@@ -431,7 +431,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 5,m,48,88,rʲukzak,rucksack,рюкзак,loan,b
 5,m,48,89,"ʔʷen, ʁʷen",horn,рог,native,b
 5,m,48,90,dunɡil,hole,яма,native,b
-5,m,48,91,ʃĩwũ,milk,молоко,native,r
+5,m,48,91,ʃĩwũ,milk,молоко,native,r
 5,m,48,93,ritɬ'i,meat,мясо,native,b
 5,m,48,95,ʁan,flat cake,лепешка,native,b
 5,m,48,96,bank,bank,банк,loan,b
@@ -520,7 +520,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 6,m,13,88,rʲukzak,rucksack,рюкзак,loan,b
 6,m,13,89,"ʔʷen, ʁʷen",horn,рог,native,b
 6,m,13,90,dunɡil,hole,яма,native,b
-6,m,13,91,ʃĩwũ,milk,молоко,native,r
+6,m,13,91,ʃĩwũ,milk,молоко,native,r
 6,m,13,93,ritɬ'i,meat,мясо,native,b
 6,m,13,95,ʁan,flat cake,лепешка,native,b
 6,m,13,96,bank,bank,банк,loan,b
@@ -609,7 +609,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 7,m,19,88,rʲukzak,rucksack,рюкзак,loan,b
 7,m,19,89,"ʔʷen, ʁʷen",horn,рог,native,b
 7,m,19,90,dunɡil,hole,яма,native,b
-7,m,19,91,ʃĩwũ,milk,молоко,native,r
+7,m,19,91,ʃĩwũ,milk,молоко,native,r
 7,m,19,93,ritɬ'i,meat,мясо,native,b
 7,m,19,95,ʁan,flat cake,лепешка,native,b
 7,m,19,96,bank,bank,банк,loan,b
@@ -698,7 +698,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 8,f,29,88,rʲukzak,rucksack,рюкзак,loan,b
 8,f,29,89,"ʔʷen, ʁʷen",horn,рог,native,b
 8,f,29,90,dunɡil,hole,яма,native,b
-8,f,29,91,ʃĩwũ,milk,молоко,native,r
+8,f,29,91,ʃĩwũ,milk,молоко,native,r
 8,f,29,93,ritɬ'i,meat,мясо,native,b
 8,f,29,95,ʁan,flat cake,лепешка,native,b
 8,f,29,96,bank,bank,банк,loan,b
@@ -787,7 +787,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 9,f,23,88,rʲukzak,rucksack,рюкзак,loan,b
 9,f,23,89,"ʔʷen, ʁʷen",horn,рог,native,b
 9,f,23,90,dunɡil,hole,яма,native,b
-9,f,23,91,ʃĩwũ,milk,молоко,native,r
+9,f,23,91,ʃĩwũ,milk,молоко,native,r
 9,f,23,93,ritɬ'i,meat,мясо,native,b
 9,f,23,95,ʁan,flat cake,лепешка,native,b
 9,f,23,96,bank,bank,банк,loan,b
@@ -876,7 +876,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 10,m,60,88,rʲukzak,rucksack,рюкзак,loan,b
 10,m,60,89,"ʔʷen, ʁʷen",horn,рог,native,b
 10,m,60,90,dunɡil,hole,яма,native,b
-10,m,60,91,ʃĩwũ,milk,молоко,native,r
+10,m,60,91,ʃĩwũ,milk,молоко,native,r
 10,m,60,93,ritɬ'i,meat,мясо,native,b
 10,m,60,95,ʁan,flat cake,лепешка,native,b
 10,m,60,96,bank,bank,банк,loan,b
@@ -965,7 +965,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 11,m,16,88,rʲukzak,rucksack,рюкзак,loan,b
 11,m,16,89,"ʔʷen, ʁʷen",horn,рог,native,b
 11,m,16,90,dunɡil,hole,яма,native,b
-11,m,16,91,ʃĩwũ,milk,молоко,native,r
+11,m,16,91,ʃĩwũ,milk,молоко,native,r
 11,m,16,93,ritɬ'i,meat,мясо,native,b
 11,m,16,95,ʁan,flat cake,лепешка,native,b
 11,m,16,96,bank,bank,банк,loan,b
@@ -1054,7 +1054,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 12,f,32,88,rʲukzak,rucksack,рюкзак,loan,b
 12,f,32,89,"ʔʷen, ʁʷen",horn,рог,native,b
 12,f,32,90,dunɡil,hole,яма,native,b
-12,f,32,91,ʃĩwũ,milk,молоко,native,r
+12,f,32,91,ʃĩwũ,milk,молоко,native,r
 12,f,32,93,ritɬ'i,meat,мясо,native,b
 12,f,32,95,ʁan,flat cake,лепешка,native,b
 12,f,32,96,bank,bank,банк,loan,b
@@ -1143,7 +1143,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 13,f,34,88,rʲukzak,rucksack,рюкзак,loan,b
 13,f,34,89,"ʔʷen, ʁʷen",horn,рог,native,b
 13,f,34,90,dunɡil,hole,яма,native,b
-13,f,34,91,ʃĩwũ,milk,молоко,native,r
+13,f,34,91,ʃĩwũ,milk,молоко,native,r
 13,f,34,93,ritɬ'i,meat,мясо,native,b
 13,f,34,95,ʁan,flat cake,лепешка,native,b
 13,f,34,96,bank,bank,банк,loan,b
@@ -1232,7 +1232,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 14,f,53,88,rʲukzak,rucksack,рюкзак,loan,b
 14,f,53,89,"ʔʷen, ʁʷen",horn,рог,native,b
 14,f,53,90,dunɡil,hole,яма,native,b
-14,f,53,91,ʃĩwũ,milk,молоко,native,r
+14,f,53,91,ʃĩwũ,milk,молоко,native,r
 14,f,53,93,ritɬ'i,meat,мясо,native,b
 14,f,53,95,ʁan,flat cake,лепешка,native,b
 14,f,53,96,bank,bank,банк,loan,b
@@ -1321,7 +1321,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 15,m,17,88,rʲukzak,rucksack,рюкзак,loan,b
 15,m,17,89,"ʔʷen, ʁʷen",horn,рог,native,b
 15,m,17,90,dunɡil,hole,яма,native,b
-15,m,17,91,ʃĩwũ,milk,молоко,native,r
+15,m,17,91,ʃĩwũ,milk,молоко,native,r
 15,m,17,93,ritɬ'i,meat,мясо,native,b
 15,m,17,95,ʁan,flat cake,лепешка,native,b
 15,m,17,96,bank,bank,банк,loan,b
@@ -1410,7 +1410,7 @@ s_id,sex,age_2017,w_id,stimulus,translation_en,translation_ru,stimulus_source,cl
 16,m,53,88,rʲukzak,rucksack,рюкзак,loan,b
 16,m,53,89,"ʔʷen, ʁʷen",horn,рог,native,b
 16,m,53,90,dunɡil,hole,яма,native,b
-16,m,53,91,ʃĩwũ,milk,молоко,native,r
+16,m,53,91,ʃĩwũ,milk,молоко,native,r
 16,m,53,93,ritɬ'i,meat,мясо,native,b
 16,m,53,95,ʁan,flat cake,лепешка,native,b
 16,m,53,96,bank,bank,банк,loan,b
