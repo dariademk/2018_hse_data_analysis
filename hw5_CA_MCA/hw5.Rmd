@@ -1,0 +1,78 @@
+---
+title: "hw5"
+author: "Daria Demkina"
+date: "20 03 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### 1.1
+```{r}
+
+chairs <- read.csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/dariademk/hw5_CA_MCA/hw5_chairs.csv")
+
+chairs %>%
+  select(-c(Shop, WordDE, Category)) -> chairs_new
+
+MCA <- MASS::mca(chairs_new[,])
+MCA
+
+chairs <- cbind(chairs, MCA$rs)
+variables <- as_data_frame(MCA$cs)
+variables$var_names <- rownames(MCA$cs)
+chairs %>% 
+  ggplot(aes(`1`, `2`))+
+  geom_point(aes(color =  Category))+
+  stat_ellipse(aes(color = Category))+
+  geom_text(data = variables, aes(`1`, `2`, label = var_names))+
+  theme_bw()+
+  scale_x_continuous(limits = c(-0.015, 0.02))
+```
+
+### 1.2
+Стул и кресло являются разными категориями в сознании носителей языка за некоторым исключением, где эти понятия пересекаются.
+### 2.1
+```{r}
+colreg <- read.csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/dariademk/hw5_CA_MCA/hw5_colreg.csv")
+
+ca <- ca(colreg[-5])
+
+colreg_col <- data.frame(ca$colcoord)
+colreg_col$rows <- rownames(ca$colcoord)
+
+colreg_row <- data.frame(ca$rowcoord)
+colreg_row$rows <- rownames(ca$rowcoord)
+
+colreg_col %>% 
+  ggplot(aes(Dim1, Dim2, label = rows))+
+  geom_text(color = "blue")+
+  geom_text(data = colreg_row, color = "red")+
+  theme_bw()+
+  labs(x = "Dim1 (42.1%)",
+       y = "Dim2 (32.6%)")
+```
+### 2.2
+Черный цвет чаще всего встречается в устной речи, в академическом жанре реже всего встречаются цвета, в художественной литературе часто встречаются синий, желтый, розовый и другие. Серый цвет встречается во всех жанрах очень редко.
